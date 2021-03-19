@@ -1,3 +1,6 @@
+#include<iostream>
+#include<vector>
+using namespace std;
 
 void bubbleSort(vector<int> &a){
     int len=a.size();
@@ -8,4 +11,24 @@ void bubbleSort(vector<int> &a){
             }
         }
     }
+}
+
+int main(){
+    vector<int> a;
+    int s;
+
+    for(int i=0;; i++){
+        cin >> s;
+        a.push_back(s);
+        if(cin.get()=='\n'){
+            break; 
+        }
+    }
+    bubbleSort(a);
+
+    for(int i=0; i<a.size(); i++){
+        cout << a[i] << " ";
+    }
+
+    
 }

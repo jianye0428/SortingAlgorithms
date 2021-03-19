@@ -1,3 +1,6 @@
+#include<iostream>
+#include<vector>
+
 void shellsort(vector<int> &a){
     int len = a.size();
     for(int gap=len/2; gap>0; gap/=2){

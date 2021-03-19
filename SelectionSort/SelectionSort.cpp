@@ -1,3 +1,6 @@
+#include<vector>
+#include<iostream>
+using namespace std;
 
 void SelectionSort(vector<int> &a){
     int len = a.size();

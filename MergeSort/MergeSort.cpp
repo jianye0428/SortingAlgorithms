@@ -1,4 +1,8 @@
-void mergeSort(vector<int> &a, vector<int> &T, int left, int right){
+#include<iostream>
+#include<vector>
+using namespace std;
+
+void mergeSort(vector<int>& a, vector<int>& T, int left, int right){
     if(right - left == 1){
         return;
     }
@@ -21,4 +25,8 @@ void mSort(vector<int> &a){
     int len = a.size();
     vector<int> T(len);
     mergeSort(a, T, 0, len);
+}
+
+int main(){
+    cout << "Sorting Starting" <<endl;
 }
