@@ -1,7 +1,8 @@
 #include<iostream>
 #include<vector>
+using namespace std;
 
-void shellsort(vector<int> &a){
+void shellsort(vector<int>& a){
     int len = a.size();
     for(int gap=len/2; gap>0; gap/=2){
         for(int j=i+gap, temp, preIndex;j<len;j = j+gap){

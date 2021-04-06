@@ -14,21 +14,23 @@ void bubbleSort(vector<int> &a){
 }
 
 int main(){
-    vector<int> a;
-    int s;
+    vector<int> a{1,3,23,12,15,3};
+    // int s;
 
-    for(int i=0;; i++){
-        cin >> s;
-        a.push_back(s);
-        if(cin.get()=='\n'){
-            break; 
-        }
-    }
+    // for(int i=0;; i++){
+    //     cin >> s;
+    //     a.push_back(s);
+    //     if(cin.get()=='\n'){
+    //         break; 
+    //     }
+    // }
+    
     bubbleSort(a);
 
     for(int i=0; i<a.size(); i++){
         cout << a[i] << " ";
     }
+    cout << endl;
 
     
 }
